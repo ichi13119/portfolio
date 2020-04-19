@@ -1,0 +1,82 @@
+.skillsContainer {
+  padding: 10rem 10rem 0;
+  // animation-name: fadein;
+  // animation-duration: 3s;
+}
+// @keyframes fadein {
+// from {
+//   opacity: 0;
+//   transform: translateY(20px);
+// }
+// to {
+//   opacity: 1;
+//   transform: translateY(0);
+// }
+// }
+
+.skillsBlock {
+  margin-bottom: 10rem;
+}
+
+.flex {
+  display: flex;
+  margin-top: 3rem;
+  width: 80%;
+}
+
+.content {
+  font-size: 2.5rem;
+}
+
+.contentBox {
+  text-align: center;
+  // position: relative;
+
+      .circleBar {
+        transform: rotate(180deg);
+        width: 50%;
+        z-index: 0;
+      }
+      
+      .skillDetailBox {
+        margin-top: -7.5rem;
+
+        .skillLevel {
+          padding: 1rem 0;
+        }
+
+        .skillName {
+          padding-top: 1rem;
+        }
+      }
+
+      .nextIcon {
+        width: 5rem;
+        height: 5rem;
+      }
+}
+
+.divine.sub {
+  width: 30%;
+}
+
+.acquires {
+
+  .contentBox {
+    height: 60px;
+    vertical-align: middle;
+
+    &.noIconBox {
+      border: 1px solid #06F;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 1rem;
+    }
+
+    .noIcon {
+      font-size: 1.2rem;
+      font-family: '遊ゴシック';
+      padding-top: .3rem;
+    }
+  }
+}
