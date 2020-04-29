@@ -111,7 +111,7 @@ export default function TemporaryDrawer() {
           <MenuSharpIcon
             onClick={toggleDrawer(anchor, true)}
             style={{
-              fontSize: 50,
+              fontSize: 100,
               padding: 20,
               color: "0066FF"
             }}/>

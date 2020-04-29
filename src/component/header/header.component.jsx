@@ -15,25 +15,10 @@ class Header extends React.Component {
   render() {
     return (
       <div className="headerContainer">
-        {/* <Menu> */}
-        <TemporaryDrawer />
-        {/* <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='skills'>Skills</Link></li>
-          <li><Link to='/products'>Products</Link></li>
-          <li><Link to='/contact'>Contact</Link></li>
-        </ul> */}
-        {/* </Menu> */}
+        <div className='drawer'>
+          <TemporaryDrawer/>
+        </div>
       </div>
-
-      // <HeaderContainer>
-      //   <Menu to='/'>Home</Menu>
-      //   <Menu to='/about'>About</Menu>
-      //   <Menu to='/skills'>Skills</Menu>
-      //   <Menu to='/products'>Products</Menu>
-      //   <Menu to='/contact'>Contact</Menu>
-      // </HeaderContainer>
     )
   }
 };

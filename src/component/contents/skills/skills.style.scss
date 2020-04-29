@@ -1,82 +1,180 @@
+@import '../../../App.scss';
+
 .skillsContainer {
   padding: 10rem 10rem 0;
-  // animation-name: fadein;
-  // animation-duration: 3s;
-}
-// @keyframes fadein {
-// from {
-//   opacity: 0;
-//   transform: translateY(20px);
-// }
-// to {
-//   opacity: 1;
-//   transform: translateY(0);
-// }
-// }
 
-.skillsBlock {
-  margin-bottom: 10rem;
-}
+  @include pro {
+    padding: 5rem 5rem 2rem;
+  }
 
-.flex {
-  display: flex;
-  margin-top: 3rem;
-  width: 80%;
-}
+  @include sp {
+    padding: 5rem 2rem;
+  }
 
-.content {
-  font-size: 2.5rem;
-}
+  .title {
+    font-size: 2rem;
 
-.contentBox {
-  text-align: center;
-  // position: relative;
+    @include sp {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .skillsBlock {
+    margin-bottom: 10rem;
 
+    @include pro {
+      margin-bottom: 0;
+    }
+
+    @include sp {
+      margin-bottom: 0;
+    }
+  }
+  
+  .flex {
+    display: flex;
+    margin: 3rem 0;
+    width: 90%;
+
+    @include tab {
+      width: 100%;
+    }
+      
+    @include sp {
+      display: block;
+      width: 100%;
+    }
+    }
+  }
+    
+  .content {
+    font-size: 2.5rem;
+    margin: 2rem auto;
+    
+    .contentBox {
+      text-align: center;
+      
       .circleBar {
         transform: rotate(180deg);
         width: 50%;
         z-index: 0;
+
+        @include pro {
+          width: 70%;
+
+          &.back {
+            width: 45%;
+          }
+        }
+
+        @include tab {
+          width: 75%;
+
+          &.back {
+            width: 40%;
+          }
+        }
+        
+        @include sp {
+          width: 40%;
+        }
       }
       
       .skillDetailBox {
         margin-top: -7.5rem;
 
+        @include pro {
+          margin: -7.5rem 1rem 0;
+        }
+
+        @include pro {
+          margin-top: -6.5rem;
+        }
+        
+        @include sp {
+          margin-top: -7rem;
+        }
+        
         .skillLevel {
           padding: 1rem 0;
-        }
 
+          @include tab {
+            font-size: 2rem;
+          }
+        }
+        
         .skillName {
           padding-top: 1rem;
+
+          @include pro {
+            font-size: 2rem;
+          }
+
+          @include tab {
+            font-size: 1.5rem;
+          }
+          
+          @include sp {
+            font-size: 2rem;
+            padding-top: 0;
+          }
         }
       }
-
-      .nextIcon {
-        width: 5rem;
-        height: 5rem;
-      }
-}
-
-.divine.sub {
-  width: 30%;
-}
-
-.acquires {
-
-  .contentBox {
-    height: 60px;
-    vertical-align: middle;
-
-    &.noIconBox {
-      border: 1px solid #06F;
-      width: 50px;
-      height: 50px;
-      margin: 0 auto 1rem;
-    }
-
-    .noIcon {
-      font-size: 1.2rem;
-      font-family: '遊ゴシック';
-      padding-top: .3rem;
+      
+      // .nextIcon {
+      //   width: 5rem;
+      //   height: 5rem;
+      // }
     }
   }
-}
+    
+    .divine {
+      border-bottom: 3px solid #FFC355;
+      width: 80%;
+    }
+    
+    .divine.sub {
+    width: 30%;
+  }
+  
+  .acquires {
+    
+    .skillName {
+      @include pro {
+        font-size: 2rem;
+      }
+
+      @include tab {
+        text-align: center;
+        font-size: 1.5rem;
+      }
+
+      @include sp {
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+
+    .contentBox {
+      height: 60px;
+      vertical-align: middle;
+      
+      &.noIconBox {
+        border: 1px solid #06F;
+        width: 50px;
+        height: 50px;
+        margin: 0 auto 1rem;
+        vertical-align: middle;
+
+        @include pro {
+          margin: 0 auto .65rem;
+        }
+      }
+      
+      .noIcon {
+        font-size: 1rem;
+        font-family: '遊ゴシック';
+        padding-top: .1rem;
+      }
+    }
+  }

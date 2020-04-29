@@ -11,7 +11,7 @@ import Home from './component/contents/home/home.component';
 import About from './component/contents/about/about.component';
 import Skills from './component/contents/skills/skills.component';
 import Products from './component/contents/products/products.component';
-import Contact from './component/contents/contact/contact.component';
+// import Contact from './component/contents/contact/contact.component';
 import Footer from './component/footer/footer.component';
 
 
@@ -30,7 +30,7 @@ class App extends React.Component {
             </Route>
             <Route path='/skills' component={Skills} />
             <Route path='/products' component={Products} />
-            <Route path='/contact' component={Contact} />
+            {/* <Route path='/contact' component={Contact} /> */}
           </Switch>
           {/* <button 
           className="btn-day"

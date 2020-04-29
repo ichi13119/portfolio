@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CardContainer from '../linkCard/linkCard.component';
+
 import './home.style.scss';
 
 class Home extends React.Component {
@@ -8,8 +10,11 @@ class Home extends React.Component {
     return(
       <div className="homeContainer">
         <div className="textContainer">
-          <p className="text">hi,there.</p>
-          <p className="text">welcome to my world.</p>
+          <div className="text">Hi,there.</div>
+          <div className="text">Welcome to my world.</div>
+        </div>
+        <div className="cardContainer">
+          <CardContainer />
         </div>
       </div>
     )

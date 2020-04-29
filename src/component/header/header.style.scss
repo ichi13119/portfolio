@@ -1,10 +1,36 @@
+@import '../../App.scss';
+
 .headerContainer {
   position: fixed;
   width: 100%;
-  text-align: right;
   z-index: 100;
+  text-align: right;
+
+  .drawer {
+    position: relative;
+    
+    div {
+      position: absolute;
+      right: 0;
+    }
+  }
+
+  .cardContainer {
+
+    div {
+      div {
+        padding: 0;
+      }
+    }
+  }
 }
 
-.listItemText span {
-  font-family: 'Oxygen';
-}
+// .MuiSvgIcon-root {
+//   font-size: 50px;
+//   height: 90px;
+//   width: 90px;
+
+//   @include sp {
+//     font-size: 10px;
+//   }
+// }

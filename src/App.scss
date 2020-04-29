@@ -1,35 +1,36 @@
-html {
-  height: 100%;
-  overflow: scroll;
-}
+$pc: 1200px;
+$pro: 1024px;
+$tab: 960px;
+$sp: 480px;
 
-body {
-  height: 100%;
-//   animation-name: fadein;
-//   animation-duration: 1.5s;
-// }
-// @keyframes fadein {
-// from {
-//   opacity: 0;
-//   transform: translateY(20px);
-// }
-// to {
-//   opacity: 1;
-//   transform: translateY(0);
-// }
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin pro {
+  @media (max-width: ($pro)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
 }
 
 .App {
-  height: 100%;
+  // height: 100%;
   color: #06F;
 
   .isNight {
     color: rgb(201, 187, 0);
   }
-}
-
-.main {
-  height: 100%;
 }
 
 .btn-day {
@@ -44,3 +45,33 @@ body {
   left:55%;
 }
 
+.pageTitle {
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0;
+
+    @media (max-width: ($pro)) {
+      font-size: 2.2rem;
+    }
+    @media (max-width: ($tab)) {
+      font-size: 2.2rem;
+    }
+    @media (max-width: ($sp)) {
+      font-size: 2rem;
+    }
+  }
+
+    .topics {
+      margin-top: 5rem;
+      text-align: left;
+
+      @media (max-width: ($pro)) {
+        margin-top: 3rem;
+    }
+      @media (max-width: ($tab)) {
+        margin-top: 3rem;
+    }
+      @media (max-width: ($sp)) {
+        margin-top: 3rem;
+    }
+  }

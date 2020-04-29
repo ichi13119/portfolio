@@ -7,29 +7,6 @@ class Personalities extends React.Component {
   render() {
     return (
       <div className="personContainer">
-        {/* <div className="topics">
-          <div className="title">
-            <p>Likes</p>
-          </div>
-          <div className="details">
-            <ul>
-              <li>バスケットボール</li>
-              <li>スノーボード</li>
-              <li>カラオケ</li>
-              <li>ドライブ</li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="topics">
-          <div className="title">
-            <p>Refers</p>
-          </div>
-          <div className="details">
-            <p></p>
-          </div>
-        </div> */}
-
         <div className="topics">
           <div className="title">
             <span className="divine">Insight</span>
@@ -83,7 +60,7 @@ class Personalities extends React.Component {
                 </div>
               </div>
             </div>
-            <div className="details fadeConts">
+            <div className="details">
             <span className="subtitle divine-thin">クリフトンストレングスTOP5</span>
               <ul className="content">
                 <li className="heading spacing">1.慎重さ</li>
