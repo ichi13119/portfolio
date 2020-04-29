@@ -1,54 +1,139 @@
-.details {
-  width: 90%;
-  margin-bottom: 5rem;
-  // margin: 2.5rem 1rem 5rem;
+@import '../../../../App.scss';
 
-  ul {
-    margin: 1.2rem 0;
-    padding: 0;
-    list-style-type: none;
+.personContainer {
 
-    li {
+  .details {
+    width: 90%;
+    margin-bottom: 5rem;
+    // margin: 2.5rem 1rem 5rem;
+    
+    ul {
+      margin: 1.2rem 0;
+      padding: 0;
+      list-style-type: none;
+      
+      li {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+      }
+    }
+    
+    .subtitle {
       font-size: 1.5rem;
-      margin: 0.5rem 0;
+      color: #00C0CE;
+    }
+    
+    .divine {
+      width: 100%;
+    }
+
+    @include pro {
+
+      .subtitle {
+        font-size: 1.3rem;
+      }
+    }
+
+    @include tab {
+
+      .subtitle {
+        font-size: 1.3rem;
+      }
+    }
+    
+    @include sp {
+      margin-bottom: 3rem;
+      width: 100%;
+      
+      .subtitle {
+        font-size: 1.2rem;
+      }
     }
   }
-
-  .subtitle {
-    font-size: 1.5rem;
-    // margin-bottom: 2rem;
-
+  
+  .divine-thin {
+    border-bottom: 1.5px solid #FFC355;
   }
+  
+  .content {
+    // padding: 0 1rem;
+    margin: 2rem auto;
+    
+    .heading {
+      font-size: 1.3rem;
+      padding-bottom: .3rem;
+      color: #00C0CE;
+      
+      
+      span {
+        margin-left: 1rem;
+      }
+    }
+    .spacing {
+      margin: 3rem 0;
+    }
 
-  .divine {
-    width: 100%;
-  }
-}
+    @include pro {
+      .heading {
+        font-size: 1.1rem;
+      }
+      .spacing {
+        margin: 2rem 0;
+      }
+    }
 
-.divine-thin {
-  border-bottom: 1.5px solid #FFC355;
-}
+    @include tab {
+      .heading {
+        font-size: 1.1rem;
+      }
 
-.content {
-  // padding: 0 1rem;
-  margin: 2rem auto;
-
-  .heading {
-    font-size: 1.3rem;
-    padding-bottom: .3rem;
-
-    span {
-      margin-left: 1rem;
+      .spacing {
+        margin: 2rem 0;
+      }
+    }
+    
+    @include sp {
+      margin: 1.2rem auto;
+      
+      .bar {
+        margin-top: -.5rem;
+      }
+      
+      .heading {
+        font-size: 1rem;
+      }
+      
+      .spacing {
+        margin: 1.5rem 0;
+      }
     }
   }
-  .spacing {
-    margin: 3rem 0;
-  }
-}
+  
+  .container {
+    margin-top: 3rem;
+    width: 80%;
 
-.container {
-  margin-top: 3rem;
-  width: 80%;
-  // display: flex;
-  // justify-content: space-between;
-}
+    @include pro {
+      .details {
+        margin-bottom: 3rem;
+      }
+    }
+
+    @include tab {
+
+      :last-child {
+        margin-bottom: 0;
+      }
+
+      .details {
+        margin-top: 3rem;
+      }
+    }
+    
+    @include sp {
+      margin-top: 2rem;
+      width: 90%;
+    }
+  }
+  
+} 

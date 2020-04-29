@@ -82,7 +82,7 @@ class Skills extends React.Component {
             <div className="details flex">
             <div className="content">
                 <div className="contentBox">
-                  <Circle percent="20" gapDegree="70" className="circleBar" />
+                  <Circle percent="20" gapDegree="70" className="circleBar back" />
                   <div className="skillDetailBox">
                     <div className="skillLevel">1</div>
                     <FontAwesomeIcon
@@ -95,7 +95,7 @@ class Skills extends React.Component {
               </div>
               <div className="content">
                 <div className="contentBox">
-                  <Circle percent="20" gapDegree="70" className="circleBar" />
+                  <Circle percent="20" gapDegree="70" className="circleBar back" />
                   <div className="skillDetailBox">
                     <div className="skillLevel">1</div>
                     <FontAwesomeIcon

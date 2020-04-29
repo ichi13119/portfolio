@@ -1,65 +1,91 @@
+@import '../../../App.scss';
+
 .aboutContainer {
   padding: 10rem 10rem 0;
-}
-
-.pageTitle {
-  font-size: 3rem;
-  font-weight: normal;
-  margin: 0;
-}
-
-.basics {
-  display: flex;
-}
-
-.goal {
-  font-size: 2.2rem;
-  // font-weight: bold;
-}
-
-.tabs {
-  color: #06F;
-  background-color: white;
-
-  div {
-    justify-content: space-between;
-    padding: 0 10rem;
-
-    span {
-      font-size: 1.15rem;
-    }
-  }
-    
-    span:nth-of-type(1):last-child {
-      height: .25rem;
-      background-color: #FFC355;
-    }
-}
-
-.personContainer,
-.worksContainer,
-.historyContainer {
-  // width: 75%;
-  // margin: 2.5rem auto 0;
-  margin-top: 2.5rem;
-}
-
-.divine {
-  border-bottom: 3px solid #FFC355;
-  width: 80%;
-}
-
-.topics {
-  margin-top: 5rem;
-  // padding: 0 5rem;
-  text-align: left;
   
-  .title {
-    font-size: 2rem;
-    margin-bottom: 1rem;
+  .pageTitle {
+    // font-size: 3rem;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .basics {
+    display: flex;
+  }
+  
+  .goal {
+    font-size: 2.2rem;
+
+    @include pro {
+      font-size: 1.8rem;
+    }
     
-    p {
-      margin: 0;
+    @include tab {
+      font-size: 1.8rem;
+    }
+    
+    @include sp {
+      font-size: 1.25rem;
     }
   }
+  
+  .personContainer,
+  .worksContainer,
+  .historyContainer {
+    // width: 75%;
+    // margin: 2.5rem auto 0;
+    margin-top: 2.5rem;
+  }
+  
+  .divine {
+    border-bottom: 3px solid #FFC355;
+    width: 80%;
+  }
+  
+  .topics {
+    // margin-top: 5rem;
+    // // padding: 0 5rem;
+    // text-align: left;
+    
+    .title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+
+      @include pro {
+        font-size: 1.75rem;
+      }
+
+      @include tab {
+        font-size: 1.5rem;
+      }
+      
+      p {
+        margin: 0;
+      }
+    }
+    
+    @include sp {
+      margin-top: 3rem;
+      
+      .title {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  @include pro {
+    padding: 5rem 5rem 3rem;
+  }
+  
+  @include tab {
+    padding: 5rem 5rem 3rem;
+  }
+  
+    @include sp {
+      padding: 5rem 2rem 0;
+  
+      .pageTitle {
+        font-size: 2rem;
+      }
+    }
 }

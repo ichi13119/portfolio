@@ -8,28 +8,48 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import MenuSharpIcon from "@material-ui/icons/MenuSharp";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   list: {
-    width: 250,
     textDecoration: "none",
+    [theme.breakpoints.up('xs')]: {
+      width: 150,
+    },
+    [theme.breakpoints.up('sm')]: {
+      width: 200,
+    },
+    [theme.breakpoints.up('md')]: {
+      width: 250,
+    },
+    [theme.breakpoints.up('lg')]: {
+      width: 250,
+    },
   },
   links: {
     textDecoration: "none",
     color: "#06F",
   },
-  header: {
-    textAlign: "right",
-    fontFamily: "Oxygen"
+  icon: {
+    color: "0066FF",
+    [theme.breakpoints.up('xs')]: {
+      padding: 15,
+      fontSize: 40,
+    },
+    [theme.breakpoints.up('sm')]: {
+      padding: 20,
+      fontSize: 45,
+    },
+    [theme.breakpoints.up('md')]: {
+      padding: 20,
+      fontSize: 50,
+    },
   }
-});
+}));
 
 export default function TemporaryDrawer() {
   const classes = useStyles();
   const [state, setState] = React.useState({
     right: false
   });
-
-  const [selectedIndex, setSelectedIndex] = React.useState(0);
 
   const toggleDrawer = (anchor, open) => event => {
     if (
@@ -43,7 +63,7 @@ export default function TemporaryDrawer() {
   };
 
   const handleListItemClick = (event, index) => {
-    setSelectedIndex(index);
+    window.scrollTo(0, 0);
   };
 
   const list = anchor => (
@@ -59,7 +79,6 @@ export default function TemporaryDrawer() {
         <Link to="/" className={classes.links}>
           <ListItem
             button
-            selected={selectedIndex === 0}
             onClick={event => handleListItemClick(event, 0)}
           >
             <ListItemText className="listItemText">Home</ListItemText>
@@ -68,7 +87,6 @@ export default function TemporaryDrawer() {
         <Link to="/about" className={classes.links}>
           <ListItem
             button
-            selected={selectedIndex === 1}
             onClick={event => handleListItemClick(event, 1)}
           >
             <ListItemText className="listItemText">About</ListItemText>
@@ -77,7 +95,6 @@ export default function TemporaryDrawer() {
         <Link to="/skills" className={classes.links}>
           <ListItem
             button
-            selected={selectedIndex === 2}
             onClick={event => handleListItemClick(event, 2)}
           >
             <ListItemText className="listItemText">Skills</ListItemText>
@@ -86,19 +103,9 @@ export default function TemporaryDrawer() {
         <Link to="/products" className={classes.links}>
           <ListItem
             button
-            selected={selectedIndex === 3}
             onClick={event => handleListItemClick(event, 3)}
           >
             <ListItemText className="listItemText">Products</ListItemText>
-          </ListItem>
-        </Link>
-        <Link to="/contact" className={classes.links}>
-          <ListItem
-            button
-            selected={selectedIndex === 4}
-            onClick={event => handleListItemClick(event, 4)}
-          >
-            <ListItemText className="listItemText">Contact</ListItemText>
           </ListItem>
         </Link>
       </List>
@@ -110,12 +117,7 @@ export default function TemporaryDrawer() {
       {["right"].map(anchor => (
         <React.Fragment key={anchor}>
           <MenuSharpIcon
-            onClick={toggleDrawer(anchor, true)}
-            style={{
-              fontSize: 50,
-              padding: 20,
-              color: "0066FF"
-            }}/>
+            onClick={toggleDrawer(anchor, true)}className={classes.icon}/>
           <Drawer
             anchor={anchor}
             open={state[anchor]}

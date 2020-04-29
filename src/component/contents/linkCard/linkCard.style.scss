@@ -1,0 +1,97 @@
+@import '../../../App.scss';
+
+.linkCardContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+
+  .linkCard {
+    width: 30%;
+    height: 500px;
+    // margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    p {
+      // color: "#06F";
+      transform: translateY(250%);
+    }
+
+    button {
+      transform: translateY(400%);
+
+      &:hover{
+        background-color: inherit;
+      }
+      
+      a {
+        padding: 10px 20px;
+        font-size: 16px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  @include pro {
+    .linkCard {
+      height: 350px;
+
+      p {
+        transform: translateY(100%);
+      }
+
+      button {
+        transform: translateY(350%);
+
+        a {
+          font-size: 14px;
+          padding: 2px 5px;
+        }
+      }
+    }
+  }
+
+  @include tab {
+    .linkCard {
+      height: 250px;
+
+      p {
+        transform: translateY(100%);
+      }
+
+      button {
+        transform: translateY(250%);
+
+        a {
+          font-size: 12px;
+          padding: 2px 5px;
+        }
+      }
+    }
+  }
+
+  @include sp {
+    display: block;
+    padding: 0;
+
+    .linkCard {
+      width: 100%;
+      height: 200px;
+
+      p {
+        transform: translateY(50%);
+      }
+
+      button {
+        transform: translateY(120%);
+
+
+        a {
+          font-size: 12px;
+          padding: 3px 7px;
+        }
+      }
+    }
+  }
+}

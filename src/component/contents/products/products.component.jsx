@@ -14,8 +14,14 @@ class Products extends React.Component {
     return(
       <div className="productsContainer">
         <div className="productsBlock">
-          <div className="text">Sorry. . .　Not ready yet.</div>
-          <div className="text">Please wait a moment until I'm getting update.</div>
+          <h1 className="pageTitle">
+            Products
+            <div className="divine"></div>
+          </h1>
+          <div className="textContainer">
+            <div className="text">Sorry. . .　Not ready yet.</div>
+            <div className="text">Please wait a moment until I'm getting update.</div>
+          </div>
         </div>
       </div>
 
