@@ -1,0 +1,74 @@
+@import '../../../App.scss';
+
+.worksContainer {
+  padding: 10rem 10rem 0;
+
+  @include pro {
+    padding: 5rem;
+  }
+
+  @include sp {
+    padding: 5rem 2rem;
+  }
+  
+  .worksBlock {
+
+    @include sp {
+      padding-top: 0;
+      margin-bottom: 0;
+    }
+
+      .linkContainer {
+        margin: 5rem 0;
+        
+        @include pro {
+          margin: 5rem 0 0;
+        }
+
+        @include sp {
+          margin-top: 3rem;
+        }
+
+        .linkCard {
+          height: 180px;
+          width: 180px;
+          padding: 20px;
+
+          @include sp {
+            width: 100%;
+            padding: 0
+          }
+
+          .text {
+            margin: 0;
+            text-align: left;
+          }
+
+          button {
+            transform: translate(60%, 50%);
+
+            @include pro {
+              transform: translate(50%, 50%);
+            }
+            
+            @include tab {
+              transform: translate(45%, 50%);
+            }
+
+            @include sp {
+              transform: translate(120%, 120%);
+            }
+
+            a {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+  }
+
+  .divine {
+    border-bottom: 3px solid #FFC355;
+    width: 80%;
+  }
+}

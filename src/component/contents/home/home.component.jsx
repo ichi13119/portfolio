@@ -4,9 +4,8 @@ import CardContainer from '../linkCard/linkCard.component';
 
 import './home.style.scss';
 
-class Home extends React.Component {
+export default function Home() {
 
-  render() {
     return(
       <div className="homeContainer">
         <div className="textContainer">
@@ -18,7 +17,4 @@ class Home extends React.Component {
         </div>
       </div>
     )
-  }
-};
-
-export default Home;
+  };
