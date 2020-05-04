@@ -100,12 +100,12 @@ export default function TemporaryDrawer() {
             <ListItemText className="listItemText">Skills</ListItemText>
           </ListItem>
         </Link>
-        <Link to="/products" className={classes.links}>
+        <Link to="/works" className={classes.links}>
           <ListItem
             button
             onClick={event => handleListItemClick(event, 3)}
           >
-            <ListItemText className="listItemText">Products</ListItemText>
+            <ListItemText className="listItemText">Works</ListItemText>
           </ListItem>
         </Link>
       </List>

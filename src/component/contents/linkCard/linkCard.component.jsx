@@ -73,10 +73,10 @@ export default function CardContainer() {
         </Card>
         <Card className='linkCard' variant="outlined">
           <CardContent>
-          <Typography className={classes.cardText}>Products</Typography>
+          <Typography className={classes.cardText}>Works</Typography>
             <CardActions>
               <Button className={classes.cardButton} onClick={() => handleListItemClick()}>
-                <Link to='/products' className
+                <Link to='/works' className
                 ={classes.cardLink}>
                   Show it
                 </Link>

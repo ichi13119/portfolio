@@ -5,16 +5,15 @@ import { Switch, Route } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { changeDay, changeNight } from './redux/mode.actions';
 
-
 import Header from './component/header/header.component';
 import Home from './component/contents/home/home.component';
 import About from './component/contents/about/about.component';
 import Skills from './component/contents/skills/skills.component';
-import Products from './component/contents/products/products.component';
-// import Contact from './component/contents/contact/contact.component';
+import Works from './component/contents/works/works.component';
+import Graphic from './three/3Ds';
 import Footer from './component/footer/footer.component';
 
-
+// import Graphic from '../src/three/3Ds';
 
 class App extends React.Component {
 
@@ -29,7 +28,8 @@ class App extends React.Component {
               <About />
             </Route>
             <Route path='/skills' component={Skills} />
-            <Route path='/products' component={Products} />
+            <Route path='/works' component={Works} />
+            <Route path='/first-three' component={Graphic} />
             {/* <Route path='/contact' component={Contact} /> */}
           </Switch>
           {/* <button 
