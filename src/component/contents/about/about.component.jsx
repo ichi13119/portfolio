@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 // import Histories from "./histories/histories.component";
 import Personalities from "./personalities/personalities.component";
+import myImage from '../../../icons/MY_IMAGE.jpg';
 
 import './about.style.scss';
 
@@ -37,7 +38,7 @@ export default function About() {
           </div>
         </div>
         <div className="basics">
-          <img src="./MY_IMAGE.jpg" alt="profile_photo" className='image'/>
+          <img src={myImage} alt="profile_photo" className='image'/>
           <div className='introContainer'>
             <div className='introduction divine'>Introduction</div>
             <p className='text'>- Shu Ichihara</p>
