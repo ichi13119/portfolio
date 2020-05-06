@@ -13,6 +13,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.1",
     "@testing-library/user-event": "^7.2.1",
+    "gh-pages": "^2.2.0",
     "intersection-observer": "^0.9.0",
     "rc-progress": "^2.5.2",
     "react": "^16.13.0",
@@ -29,7 +30,9 @@
     "styled-components": "^5.0.1",
     "three": "^0.116.1"
   },
+  "homepage": "https://ichi13119.github.io/portfolio",
   "scripts": {
+    "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
