@@ -42,7 +42,7 @@ export default function Footer() {
         <ul>
           <li>
             <Button onClick={() => handleListItemClick()}>
-              <Link to="/portfolio" className={classes.footerLinks}>
+              <Link exact to="/portfolio" className={classes.footerLinks}>
                 Home
               </Link>
             </Button>

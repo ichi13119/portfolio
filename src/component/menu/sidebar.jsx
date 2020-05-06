@@ -76,7 +76,7 @@ export default function TemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List component="nav" aria-label="main mailbox folders">
-        <Link to="/portfolio" className={classes.links}>
+        <Link exact to="/portfolio" className={classes.links}>
           <ListItem
             button
             onClick={event => handleListItemClick(event, 0)}
