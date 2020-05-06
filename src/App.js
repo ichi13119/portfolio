@@ -22,14 +22,14 @@ class App extends React.Component {
         <div className='App'>
           <Header />
           <Switch>
-            <Route exact path='/portfolio' component={Home} />
+            <Route exact path='/' component={Home} />
             {/* <Route path='/about' component={About} /> */}
-            <Route path="/portfolio/about">
+            <Route path="/about">
               <About />
             </Route>
-            <Route path='/portfolio/skills' component={Skills} />
-            <Route path='/portfolio/works' component={Works} />
-            <Route path='/portfolio/first-three' component={Graphic} />
+            <Route path='/skills' component={Skills} />
+            <Route path='/works' component={Works} />
+            <Route path='/first-three' component={Graphic} />
             {/* <Route path='/contact' component={Contact} /> */}
           </Switch>
           {/* <button 
