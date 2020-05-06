@@ -37,7 +37,7 @@ export default function About() {
           </div>
         </div>
         <div className="basics">
-          <img src="../../../MY_IMAGE.jpg" alt="profile_photo" className='image'/>
+          <img src="./MY_IMAGE.jpg" alt="profile_photo" className='image'/>
           <div className='introContainer'>
             <div className='introduction divine'>Introduction</div>
             <p className='text'>- Shu Ichihara</p>
