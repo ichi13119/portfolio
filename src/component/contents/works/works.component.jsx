@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#06F",
     paddingLeft: 10,
     [theme.breakpoints.up("xs")]: {
-      fontSize: 26,
+      fontSize: 22,
       display: "inline",
       textAlign: "center",
     },

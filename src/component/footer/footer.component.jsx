@@ -6,12 +6,25 @@ import { Button } from "@material-ui/core";
 
 import "./footer.style.scss";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   footerLinks: {
+    fontWeight: 'normal',
     textDecoration: "none",
     color: "#06F",
+    [theme.breakpoints.up("xs")]: {
+      fontSize: 12,
+    },
+    [theme.breakpoints.up("sm")]: {
+      fontSize: 16,
+    },
+    [theme.breakpoints.up("md")]: {
+      fontSize: 18,
+    },
+    [theme.breakpoints.up("lg")]: {
+      fontSize: 20,
+    },
   },
-});
+}));
 
 export default function Footer() {
   const classes = useStyles();

@@ -2,6 +2,7 @@
 
 .footerContainer {
   width: 100%;
+  font-weight: normal;
 
   .linkItemsContainer {
     padding-top: 2rem;
@@ -32,9 +33,13 @@
 
     @include sp {
       padding: 0;
-
+      
       li {
         padding: 6px 0;
+      }
+
+      li:last-child {
+        transform: translateX(.3rem);
       }
     }
   }
@@ -63,6 +68,10 @@
 
     p {
       margin: 0;
+    }
+
+    @include sp {
+      font-size: .75rem;
     }
   }
 }

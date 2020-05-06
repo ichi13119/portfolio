@@ -2,8 +2,8 @@ import React from 'react';
 import './App.scss';
 import './style';
 import { Switch, Route } from 'react-router-dom';
-import { connect } from 'react-redux';
-import { changeDay, changeNight } from './redux/mode.actions';
+// import { connect } from 'react-redux';
+// import { changeDay, changeNight } from './redux/mode.actions';
 
 import Header from './component/header/header.component';
 import Home from './component/contents/home/home.component';
@@ -47,18 +47,20 @@ class App extends React.Component {
     }
 
 
-const mapStateToProps = state => {
-  return {
-    day: state.day.day
-  };
-};
+// const mapStateToProps = state => {
+//   return {
+//     day: state.day.day
+//   };
+// };
 
-const mapDispatchToProps = dispatch => ({
-    changeDay: () => dispatch(changeDay(true)),
-    changeNight: () => dispatch(changeNight(false)),
-});
+// const mapDispatchToProps = dispatch => ({
+//     changeDay: () => dispatch(changeDay(true)),
+//     changeNight: () => dispatch(changeNight(false)),
+// });
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+// export default connect(
+//   mapStateToProps,
+//   mapDispatchToProps
+// )(App);
+
+export default App;

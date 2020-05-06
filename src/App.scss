@@ -28,8 +28,26 @@ $sp: 480px;
   // height: 100%;
   color: #06F;
 
-  .isNight {
-    color: rgb(201, 187, 0);
+    font-size: 20px;
+    font-weight: bold;
+    animation-name: fadein;
+    animation-duration: 2s;
+    // animation-iteration-count: infinite;
+
+@keyframes fadein {
+from {
+    opacity: 0;
+    // transform: translateY(0);
+}
+to {
+    opacity: 1;
+    // transform: translateY(0);
+}
+
+
+  // .isNight {
+  //   color: rgb(201, 187, 0);
+  // }
   }
 }
 
@@ -57,7 +75,7 @@ $sp: 480px;
       font-size: 2.2rem;
     }
     @media (max-width: ($sp)) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 

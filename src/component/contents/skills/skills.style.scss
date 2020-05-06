@@ -2,6 +2,7 @@
 
 .skillsContainer {
   padding: 10rem 10rem 0;
+  font-weight: normal;
 
   @include pro {
     padding: 5rem 5rem 2rem;
@@ -15,6 +16,10 @@
     font-size: 2rem;
 
     @include sp {
+      font-size: 1.5rem;
+    }
+
+    @include tab {
       font-size: 1.5rem;
     }
   }
@@ -33,6 +38,7 @@
   
   .flex {
     display: flex;
+    flex-wrap: wrap;
     margin: 3rem 0;
     width: 90%;
 
@@ -50,6 +56,10 @@
   .content {
     font-size: 2.5rem;
     margin: 2rem auto;
+
+    @include sp {
+      margin: 3rem auto;
+    }
     
     .contentBox {
       text-align: center;
@@ -60,7 +70,7 @@
         z-index: 0;
 
         @include pro {
-          width: 70%;
+          width: 45%;
 
           &.back {
             width: 45%;
@@ -68,7 +78,7 @@
         }
 
         @include tab {
-          width: 75%;
+          width: 40%;
 
           &.back {
             width: 40%;
@@ -81,42 +91,56 @@
       }
       
       .skillDetailBox {
-        margin-top: -7.5rem;
+        margin-top: -7rem;
+        font-size: 2rem;
 
         @include pro {
           margin: -7.5rem 1rem 0;
         }
 
         @include pro {
-          margin-top: -6.5rem;
+          margin-top: -6rem;
         }
         
         @include sp {
-          margin-top: -7rem;
+          margin-top: -6rem;
         }
         
         .skillLevel {
           padding: 1rem 0;
 
-          @include tab {
-            font-size: 2rem;
-          }
-        }
-        
-        .skillName {
-          padding-top: 1rem;
-
           @include pro {
-            font-size: 2rem;
+            font-size: 1.75rem;
           }
 
           @include tab {
             font-size: 1.5rem;
           }
+        }
+        
+        .skillName {
+          padding-top: 1rem;
+          font-size: 1.75rem;
+
+          @include pro {
+            font-size: 1.5rem;
+          }
+
+          @include tab {
+            font-size: 1.25rem;
+          }
           
           @include sp {
-            font-size: 2rem;
+            font-size: 1.25rem;
             padding-top: 0;
+          }
+        }
+
+        .skillIcon {
+          font-size: 2.5rem;
+
+          @include pro {
+            font-size: 2rem;
           }
         }
       }
@@ -138,43 +162,43 @@
   }
   
   .acquires {
-    
-    .skillName {
-      @include pro {
-        font-size: 2rem;
-      }
-
-      @include tab {
-        text-align: center;
-        font-size: 1.5rem;
-      }
-
-      @include sp {
-        text-align: center;
-        font-size: 2rem;
-      }
-    }
-
-    .contentBox {
-      height: 60px;
-      vertical-align: middle;
+    .content {
+      width: 25%;
+      text-align: center;
       
-      &.noIconBox {
-        border: 1px solid #06F;
-        width: 50px;
-        height: 50px;
-        margin: 0 auto 1rem;
-        vertical-align: middle;
-
+      .skillName {
+        font-size: 1.75rem;
+        
         @include pro {
-          margin: 0 auto .65rem;
+          font-size:  1.5rem;
+        }
+        
+        @include tab {
+          font-size: 1.2rem;
         }
       }
       
-      .noIcon {
-        font-size: 1rem;
-        font-family: '遊ゴシック';
-        padding-top: .1rem;
+      .contentBox {
+        height: 60px;
+        vertical-align: middle;
+        
+        &.noIconBox {
+          border: 1px solid #06F;
+          width: 50px;
+          height: 50px;
+          margin: 0 auto 1rem;
+          vertical-align: middle;
+          
+          @include pro {
+            margin: 0 auto .65rem;
+          }
+        }
+        
+        .noIcon {
+          font-size: 1rem;
+          font-family: '遊ゴシック';
+          padding-top: .1rem;
+        }
       }
     }
   }
