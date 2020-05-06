@@ -16,7 +16,7 @@ library.add(fab, fas, far);
 
 ReactDOM.render(
   <Provider store={store}>
-    <BrowserRouter>
+    <BrowserRouter basename={proccess.env.PUBLIC_URL}>
       <App  />
     </BrowserRouter>
   </Provider>
