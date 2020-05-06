@@ -30,7 +30,7 @@
     "styled-components": "^5.0.1",
     "three": "^0.116.1"
   },
-  "homepage": "https://ichi13119.github.io",
+  "homepage": "https://ichi13119.github.io/portfolio",
   "scripts": {
     "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
