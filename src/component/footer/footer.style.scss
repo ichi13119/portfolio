@@ -32,15 +32,21 @@
     }
 
     @include sp {
-      padding: 0;
-      
-      li {
-        padding: 6px 0;
-      }
+      padding: 0 2rem;
 
-      // li:last-child button {
-      //   transform: translateX(.3rem);
-      // }
+      ul {
+        padding: 0;
+        
+        li {
+          padding: 6px 0;
+          // width: 50%;
+          // margin: 0;
+        }
+        
+        li:last-child button {
+            transform: translateX(.25rem);
+          }
+        }
     }
   }
 
