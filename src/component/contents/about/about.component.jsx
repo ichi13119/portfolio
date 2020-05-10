@@ -43,9 +43,10 @@ export default function About() {
             <div className='introduction divine'>Introduction</div>
             <p className='text'>- Shu Ichihara</p>
             <p className='text'>- Japan,Tokyo</p>
-            <p className='text'>- 小学生から今までバスケを一番に生きてきた凡人</p>
-            <p className='text'>- デジタルコンテンツやアーティスティックな感じが好きで、フロントエンドでそんな表現をしたいと思いつつ、バックエンドやインフラもできるようになりたい少し欲張りな人間</p>
-            <p className='text'>- 成長して何かを達成できるようになることにモチベーションを感じるタイプのため、単調作業にはあまり向かないと感じる</p>
+            <p className='text'>- 小学生から今までバスケを一番に生きてきた凡人。</p>
+            <p className='text'>- デジタルコンテンツやアーティスティックな感じが好きで、フロントエンドでそんな表現をしたいと思いつつ、バックエンドやインフラもできるようになりたい少し欲張りな人間。</p>
+            <p className='text'>- 成長して何かを達成できるようになることにモチベーションを感じるタイプのため、単調作業にはあまり向かないと感じる。</p>
+            <p className="text">- 昔から変わってると言われることが多々あり、自分でもどこかずれているような感覚はある。今までと違った風を入れる要因になる(かも)</p>
           </div>
         </div>
       </div>
