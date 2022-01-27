@@ -28,7 +28,7 @@
     "redux-logger": "^3.0.6",
     "reselect": "^4.0.0",
     "styled-components": "^5.0.1",
-    "three": "^0.116.1"
+    "three": "^0.137.0"
   },
   "homepage": "https://ichi13119.github.io/portfolio",
   "scripts": {
